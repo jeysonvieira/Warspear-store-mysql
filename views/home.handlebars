@@ -1,0 +1,91 @@
+
+<div>
+    <div id="carrosel" class="carousel carousel-dark slide mx-auto" data-bs-ride="carousel"
+        style="height: 200px; width: 100vw;">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carrosel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carrosel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3500">
+                <img src="imgs/imgs-pagina/newatt.png" class="d-block mx-auto" alt="" style="height: 200px; width: 100vw;">
+                <div class="carousel-caption d-md-block text-white">
+                    <h5>COMPRE E VENDA SUA CONTA COM A MELHOR!</h5>
+                    <p>Aqui você garante sua compra com segurança de práticidade</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3500">
+                <img src="imgs/imgs-pagina/elfxmc.png" class="d-block mx-auto" alt="" style="height: 200px; width: 100vw;">
+                <div class="carousel-caption d-md-block text-white">
+                    <h5>CRIE SEU LOGIN E GANHE DESCONTOS!</h5>
+                    <p>Receba até 50% de desconto nessa Black Friday</p>
+                </div>
+            </div>
+    
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrosel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrosel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+    </div>
+    
+    <div class="mt-0" style="background-color: rgba(128, 128, 128, 0.596);">
+        <div id="paginacao">
+            <nav aria-label="Page navigation example" class="">
+                <ul class="pagination justify-content-end me-5 mt-0 mb-0 pt-3">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+    
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    
+    
+    {{#each tabela}}
+        <div id="cards1" class="container-fluid d-flex flex-row flex-wrap flex-md-nowrap justify-content-evenly">
+            <a href="./links/alucard.html" class="text-decoration-none text-light">
+                <div class="card cardwidth p-0 mt-4 bg-dark">
+                    <img src="imgs/imgs-chars/{{this.nick}}/{{this.nick}}pve.PNG" class="card-img-top p-0" alt=""
+                        style="width: 100%; height: 370px;">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            $519,99
+                        </h4>
+                        <small class="card-text">ou 12X de <strong>$45,50</strong></small>
+                        <span class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-credit-card" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
+                                <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <ul class="list-group list-group-flush border-light">
+                        <li class="list-group-item bg-dark text-light border-light">Class: {{this.class}}</li>
+                        <li class="list-group-item bg-dark text-light border-light">Server: US-Sapphire</li>
+                        <li class="list-group-item bg-dark text-light border-light">Sets: Pve</li>
+                    </ul>
+                </div>
+            </a>
+        </div>
+    
+    {{/each}}
+</div>

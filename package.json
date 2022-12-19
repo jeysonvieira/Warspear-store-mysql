@@ -1,0 +1,22 @@
+{
+  "name": "warspear-store-mysql",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Loja Warspear Atualizada com DataBase",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./users/index.js localhost 3000"
+  },
+  "author": "Jeyson Vieira",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.27.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
